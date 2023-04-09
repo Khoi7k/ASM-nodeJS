@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixiFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images//logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/global.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/dropdown_menu.css">
+    <link rel="stylesheet" href="stylesheets/product.css">
+    <link rel="stylesheet" href="stylesheets/news.css">
+    <link rel="stylesheet" href="stylesheets/order.css">
+    <link rel="stylesheet" href="stylesheets/feedback.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/responsive.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <a href="/"><img class="logo" srcset="./images/logo.png 2x" alt=""></a>
+          <ul class="navigation">
+              <li><a href="/"class="nav-item">Trang chủ</a></li>                            
+              <li onmouseover="displayDropdown()" onmouseout="removeDropdown()" class="nav-menu"><a href="/product"class="nav-item">Thực đơn</a></li>                            
+              <li><a href=""class="nav-item">Khuyến mãi</a></li>                            
+              <li><a href=""class="nav-item">Tin tức</a></li>                            
+              <li><a href=""class="nav-item">Liên hệ</a></li>                            
+          </ul>
+          <div class="header-action" id="nav-signin">
+                <a href=""><button class="header-order btn">Đặt hàng</button></a>
+                <i class="fa fa-bars menu-icon"></i>
+          </div>           
+      </nav>
+      <ul class="menu-list">
+          <li><a href="" class="menu-item">Trang chủ</a></li>
+          <li><a href="/product" class="menu-item">Thực đơn</a></li>
+          <li><a href="" class="menu-item">Khuyến mãi</a></li>
+          <li><a href="" class="menu-item">Tin tức</a></li>
+          <li><a href="" class="menu-item">Liên hệ</a></li>
+      </ul>
+      <div class="dropdown-menu" id="dropdown" onmouseover="displayDropdown()" onmouseout="removeDropdown()">
+          <div class="dropdown-list" id="cate-list">
+           
+          </div>
+      </div>
+      <section class="banner">
+          <img src="./images/banner-bg.jpg" alt="" class="banner-bg banner-bg1">
+          <div class="banner-container">
+              <div class="banner-prev banner-action" id="prevBtn"></div>
+              <div class="banner-content">
+                  <div class="slider">
+                      <img src="./images/banner1.png" alt="" class="banner-img">
+                      <img src="./images/banner2.png" alt="" class="banner-img">
+                      <img src="./images/banner3.png" alt="" class="banner-img">
+                  </div>
+              </div>
+              <div class="banner-next banner-action" id="nextBtn"></div>
+          </div>
+          <img src="./images/banner-bg.jpg" alt="" class="banner-bg banner-bg1">
+      </section>
+    </header>
+    <section class="product">
+      <h1 class="product-heading">CÁC MÓN BÁN CHẠY</h1>
+      <div class="product-list" id="product-list">
+        
+      </div>
+  </section>
+  <section class="news">
+      <div class="news-list">
+          <div class="news-item news-item1">
+              <div class="news1-content">
+                  <p class="news1-desc">Siêu ưu đãi & Hơn thế nữa</p>
+                  <h2 class="news1-title">COMBO MIXIFOOD</h2>
+                  <button class="news1-btn btn">Đặt ngay</button>
+              </div>
+              <div class="news1-img">
+                  <div class="news1-triangle"></div>
+                  <img srcset="./images/news1.png 2x" alt="">
+              </div>
+          </div>
+          <div class="news-item news-item2">
+              <img srcset="./images/news2.png 2x" alt="">
+              <p class="news2-title">MixiFood</p>
+          </div>
+          <div class="news-item news-item3">
+              <img alt="" srcset="./images/news3.png 2x">
+              <p class="news3-title">Review</p>
+          </div>
+          <div class="news-item news-item4">
+              <div class="news4-content">
+                  <h2 class="news4-title  ">Bò khô viên</h2>
+                  <p class="news4-desc">Khám phá vị ngon mới lạ</p>
+              </div>
+              <div class="news4-img">
+                  <div class="news4-triangle"></div>
+                  <img srcset="./images/news4.png 2x" alt="">
+              </div>
+          </div>
+      </div>       
+  </section>
+  <section class="order">
+      <div class="order-content">
+          <h1 class="order-heading">Đặt hàng ngay</h1>
+          <p class="order-desc">Miễn phí giao hàng cho đơn hàng đầu tiên</p>
+          <button class="order-btn">Đặt hàng ngay</button>
+      </div>
+  </section>
+  <section class="feedback">
+      <div class="feedback-left">
+          <p class="feedback-desc left-desc">Gửi phản hồi và đánh giá của bạn cho MixiFood</p>
+          <button class="feedback-btn btn">Chúng tôi lắng nghe bạn</button>
+      </div>
+      <div class="feedback-right">
+          <p class="feedback-desc">Nhập email để nhận thông tin khuyến mãi</p>
+          <div class="feedback-action">
+              <input type="text" class="feedback-input">
+              <button class="btn right-btn">Gửi</button>
+          </div>
+      </div>
+  </section>
+  <div class="line"></div>
+  <footer>
+    <%-include('footer')%>
+  </footer>
+  <div class="signature">
+    @2022    Khoi7k. All Right Reserved
+  </div>
+<script src="javascripts/app.js"></script>
+
+<!-- Typescripts -->
+<script type="module" src="javascripts/homepage.js"></script>
+  </body>
+</html>

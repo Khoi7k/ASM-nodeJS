@@ -1,0 +1,37 @@
+.order{
+    background-image: url('../images/order.png');
+    background-size: cover;
+    height: 331px;
+    padding: 0 100px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.order-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}
+.order-heading{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+}
+.order-desc{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 15px 0;
+}
+.order-btn{
+    width: 50%;
+    transform: translateX(49%);
+    color: #BD0017;
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    background-color: #fff;
+    font-size: 25px;
+}

@@ -1,0 +1,139 @@
+header{
+    position: relative;
+}
+nav{
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 9991;
+}
+.logo{
+    width: 100px;
+}
+.navigation{
+    display: flex;
+    gap: 40px;
+}
+.navigation>li{
+    list-style: none;
+}
+.nav-item{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-item:hover{
+    color: #BC7D30;
+}
+.nav-menu{
+    position: relative;
+}
+.nav-menu::after{
+    content: '';
+    position: absolute;
+    /* bottom: 0; */
+    right: 0;
+    transform: translateY(70%);
+    height: 34px;
+    width: 100%;
+    /* background-color: red; */
+}
+.header-action{
+    display: flex;
+    align-items: center;
+}
+.header-order{
+    margin-left: 10px;
+}
+.banner{
+    /* background-image: url('../images/banner-bg.jpg'); */
+    height: auto;
+    padding-top: 90px;
+    display: flex;
+}
+
+.banner-bg{
+    height: 360px;
+    width: 13%;
+    object-fit: cover;
+    z-index: 99;
+}
+.banner-content{
+    overflow-x: hidden;
+}
+.banner-container{
+    display: flex;
+    /* height: 100%; */
+    position: relative;
+}
+.banner-action{
+    width: 10%;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+}
+.banner-prev{
+    background-image: transparent;
+    transition: all 0.2s linear;
+    z-index: 999;
+}
+.banner-prev:hover{
+    background-image: linear-gradient( to right, black, transparent);
+
+}
+.banner-next{
+    right: 0;
+    background-image: transparent;
+}
+.banner-next:hover{
+    background-image: linear-gradient( to left, black, transparent);
+}
+.slider{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease-in;
+}
+.banner-img{
+    height: 360px;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 100%;
+}
+.menu-icon{
+    font-size: 30px;
+    margin-left: 25px;
+    display: none;
+    cursor: pointer;
+}
+.menu-list{
+    position: fixed;
+    right: 0;
+    top: 90px;
+    list-style: none;
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    z-index: 999;
+}
+.menu-list>li{
+    width: 100%;
+    padding: 15px 30px;
+    border-bottom: 1px solid gray;
+}
+.menu-list>li:hover .menu-item{
+    color: #BC7D30;
+}
+.menu-item{
+    text-decoration: none;
+    color: #000;
+    transition: color 0.25s linear;
+}
+.menu-list.is-active{
+    transform: translateX(0);
+}

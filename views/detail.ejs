@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixiFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/global.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/dropdown_menu.css">
+    <link rel="stylesheet" href="/stylesheets/detail.css">
+    <link rel="stylesheet" href="/stylesheets/product.css">
+    <link rel="stylesheet" href="/stylesheets/menufood.css">
+    <link rel="stylesheet" href="/stylesheets/news.css">
+    <link rel="stylesheet" href="/stylesheets/order.css">
+    <link rel="stylesheet" href="/stylesheets/feedback.css">
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <link rel="stylesheet" href="/stylesheets/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/"><img class="logo" srcset="/images/logo.png 2x" alt=""></a>
+            <ul class="navigation">
+                <li><a href="/"class="nav-item">Trang chủ</a></li>                            
+                <li onmouseover="displayDropdown()" onmouseout="removeDropdown()" class="nav-menu"><a href=""class="nav-item">Thực đơn</a></li>                            
+                <li><a href=""class="nav-item">Khuyến mãi</a></li>                            
+                <li><a href=""class="nav-item">Tin tức</a></li>                            
+                <li><a href=""class="nav-item">Liên hệ</a></li>                            
+            </ul>
+            <div class="header-action" id="nav-signin">
+                
+                <a href=""><button class="header-order btn">Đặt hàng</button></a>
+                <i class="fa fa-bars menu-icon"></i>
+            </div>           
+        </nav>
+        <ul class="menu-list">
+            <li><a href="/" class="menu-item">Trang chủ</a></li>
+            <li><a href="" class="menu-item">Thực đơn</a></li>
+            <li><a href="" class="menu-item">Khuyến mãi</a></li>
+            <li><a href="" class="menu-item">Tin tức</a></li>
+            <li><a href="" class="menu-item">Liên hệ</a></li>
+        </ul>
+        <div class="dropdown-menu" id="dropdown" onmouseover="displayDropdown()" onmouseout="removeDropdown()">
+            <div class="dropdown-list" id="cate-list">
+                
+            </div>
+        </div>
+        <section class="banner">
+            <img src="/images/banner-bg.jpg" alt="" class="banner-bg banner-bg1">
+            <div class="banner-container">
+                <div class="banner-prev banner-action" id="prevBtn"></div>
+                <div class="banner-content">
+                    <div class="slider">
+                        <img src="/images/banner1.png" alt="" class="banner-img">
+                        <img src="/images/banner2.png" alt="" class="banner-img">
+                        <img src="/images/banner3.png" alt="" class="banner-img">
+                    </div>
+                </div>
+                <div class="banner-next banner-action" id="nextBtn"></div>
+            </div>
+            <img src="/images/banner-bg.jpg" alt="" class="banner-bg banner-bg1">
+        </section>
+    </header>
+        <div class="block-90"></div>
+        <!-- <section class="tab">
+            <div class="tab-list">
+                <div class="tab-item"><p>BESTSELLER</p></div>
+                <div class="tab-item is-check"><p>COMBO<br>MIXIFOOD</p></div>
+                <div class="tab-item"><p>MÓN LẺ</p></div>
+            </div>
+            <span class="tab-delivery">Giao hàng đến: </span>
+            <span class="tab-place">TP.Hồ Chí Minh</span>
+            <p class="tab-changePlace"><span>Thay đổi</span><i class="fa-solid fa-angle-right"></i></p>
+        </section> -->
+        <section class="detail__product" id="product-detail">
+            
+        </section>
+        <section class="feedback">
+            <div class="feedback-left">
+                <p class="feedback-desc left-desc">Gửi phản hồi và đánh giá của bạn cho MixiFood</p>
+                <button class="feedback-btn btn">Chúng tôi lắng nghe bạn</button>
+            </div>
+            <div class="feedback-right">
+                <p class="feedback-desc">Nhập email để nhận thông tin khuyến mãi</p>
+                <div class="feedback-action">
+                    <input type="text" class="feedback-input">
+                    <button class="btn right-btn">Gửi</button>
+                </div>
+            </div>
+        </section>
+        <div class="line"></div>
+        <footer>
+            <%-include('footer')%>
+        </footer>
+        <div class="signature">
+            @2022    Khoi7k. All Right Reserved
+        </div>
+    <script src="/javascripts/app.js"></script>
+    <script type="module" src="/javascripts/homepage.js"></script>
+    <script type="module" src="/javascripts/detail.js"></script>
+</body>
+</html>

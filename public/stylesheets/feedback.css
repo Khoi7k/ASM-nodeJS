@@ -1,0 +1,39 @@
+.feedback{
+    padding: 0 130px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.feedback-right{
+    width: 50%;
+}
+.feedback-desc{
+    color: gray;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.left-desc{
+    width: 80%;
+}
+.feedback-btn{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+.feedback-action{
+    position: relative;
+}
+.feedback-input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+.right-btn{
+    position: absolute;
+    right: 0;
+    padding: 8px 30px;
+    font-weight: 300;
+    font-size: 20px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixiFood | Log In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images//logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/log-in.css">
+    <link rel="stylesheet" href="/stylesheets/responsive.css">
+</head>
+<body>
+    <div class="log-in_container">
+        <h1 class="log-in_heading">Welcome</h1>
+        <p class="log-in_desc">Mời bạn nhập vào thông tin đăng ký</p>
+        <form name="signupForm" onsubmit="return false">
+            <div class="log-in_form">
+                <label for="log-email" class="log-label" >Họ tên</label><br>
+                <input type="text" class="log-input" name="uname" id="dk-name"><br>
+                <label for="log-email" class="log-label">Email</label><br>
+                <input type="email" class="log-input" id="log-email" name="email" id="dk-email"><br>
+                <label for="log-pass" class="log-label">Mật khẩu</label><br>
+                <input type="password" id="log-pass" class="log-input" name="password" id="dk-pw"><br>
+            </div>
+            <div class="abc"><a href="#" class="forgot">Quên mật khẩu ?</a></div>
+            <div class="log-in_action">
+                <button class="log-in_btn1 btn-signUp" type="submit" >Sign In</button><br>
+                <button class="log-in_btn2" type="button" ><img srcset="/images/log-logo.png 2x" alt="">Sign in with Google</button><br>
+            </div>
+            <p class="last-text">Đã có tài khoản ? <a href="/action/sign-in">Đăng nhập</a></p>
+        </form>
+    </div>
+    <script type="module" src="/javascripts/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixiFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./images//logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/dropdown_menu.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" srcset="./images/logo.png 2x" alt=""></a>
+            <ul class="navigation">
+                <li><a href="index.html"class="nav-item">Trang chủ</a></li>                            
+                <li onmouseover="displayDropdown()" onmouseout="removeDropdown()" class="nav-menu"><a href="./menufood.html"class="nav-item">Thực đơn</a></li>                            
+                <li><a href=""class="nav-item">Khuyến mãi</a></li>                            
+                <li><a href="./news.html"class="nav-item">Tin tức</a></li>                            
+                <li><a href="./contact.html"class="nav-item">Liên hệ</a></li>                            
+            </ul>
+            <div class="header-action">
+                <a href="./log-in.html"><button class="sign-in btn">Đăng nhập</button></a>
+                <a href="order.html"><button class="header-order btn">Đặt hàng</button></a>
+                <i class="fa fa-bars menu-icon"></i>
+            </div>           
+        </nav>
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-item">Trang chủ</a></li>
+            <li><a href="./menufood.html" class="menu-item">Thực đơn</a></li>
+            <li><a href="" class="menu-item">Khuyến mãi</a></li>
+            <li><a href="./news.html" class="menu-item">Tin tức</a></li>
+            <li><a href="contact.html" class="menu-item">Liên hệ</a></li>
+        </ul>
+        <div class="dropdown-menu" id="dropdown" onmouseover="displayDropdown()" onmouseout="removeDropdown()">
+            <div class="dropdown-list">
+                <div class="dropdown-item">
+                    <a href="#"><img src="./images/combo-mixi.jpg" alt=""></a>
+                    <p>Combo Mixifood</p>
+                </div>
+                <div class="dropdown-item">
+                    <a href="#"><img src="./images/product-img1.png" alt=""></a>
+                    <p>Best Seller</p>
+                </div>
+                <div class="dropdown-item">
+                    <a href="#"><img src="./images/dropdown-img3.jpg" alt=""></a>
+                    <p>Các món lẻ</p>
+                </div>
+            </div>
+        </div>
+        <section class="banner">
+            <img src="./images/banner-bg.jpg" alt="" class="banner-bg banner-bg1">
+            <div class="banner-container">
+                <div class="banner-prev banner-action" id="prevBtn"></div>
+                <div class="banner-content">
+                    <div class="slider">
+                        <img src="./images/banner1.png" alt="" class="banner-img">
+                        <img src="./images/banner2.png" alt="" class="banner-img">
+                        <img src="./images/banner3.png" alt="" class="banner-img">
+                    </div>
+                </div>
+                <div class="banner-next banner-action" id="nextBtn"></div>
+            </div>
+            <img src="./images/banner-bg.jpg" alt="" class="banner-bg banner-bg1">
+        </section>
+    </header>
+    <section class="product">
+        <h1 class="product-heading">CÁC MÓN BÁN CHẠY</h1>
+        <div class="product-list">
+            <div class="product-item">
+                <img srcset="./images/product-img1.png 2x" alt="" class="product-img">
+                <div class="product-content">
+                    <p class="product-name">Khô gà lá chanh</p>
+                    <p class="price">145<span>.000đ</span></p>
+                    <p class="product-desc">Vị ngon khó cưỡng ăn không ngừng được</p>
+                    <div class="product-action">
+                        <button class="product-btn1">TÙY CHỈNH</button>
+                        <button class="product-btn2">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img srcset="./images/product-img2.png 2x" alt="" class="product-img">
+                <div class="product-content">
+                    <p class="product-name">Mực rim cay</p>
+                    <p class="price">190<span>.000đ</span></p>
+                    <p class="product-desc">Vị ngon khó cưỡng ăn không ngừng được</p>
+                    <div class="product-action">
+                        <button class="product-btn1">TÙY CHỈNH</button>
+                        <button class="product-btn2">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img srcset="./images/product-img3.png 2x" alt="" class="product-img">
+                <div class="product-content">
+                    <p class="product-name">Bò cay xé sợi</p>
+                    <p class="price">60<span>.000đ</span></p>
+                    <p class="product-desc">Vị ngon khó cưỡng ăn không ngừng được</p>
+                    <div class="product-action">
+                        <button class="product-btn1">TÙY CHỈNH</button>
+                        <button class="product-btn2">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img srcset="./images/product-img4.png 2x" alt="" class="product-img">
+                <div class="product-content">
+                    <p class="product-name">Bò khô viên</p>
+                    <p class="price">115<span>.000đ</span></p>
+                    <p class="product-desc">Vị ngon khó cưỡng ăn không ngừng được</p>
+                    <div class="product-action">
+                        <button class="product-btn1">TÙY CHỈNH</button>
+                        <button class="product-btn2">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img srcset="./images/product-img5.png 2x" alt="" class="product-img">
+                <div class="product-content">
+                    <p class="product-name">Rong biển cháy tỏi</p>
+                    <p class="price">40<span>.000đ</span></p>
+                    <p class="product-desc">Vị ngon khó cưỡng ăn không ngừng được</p>
+                    <div class="product-action">
+                        <button class="product-btn1">TÙY CHỈNH</button>
+                        <button class="product-btn2">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item">
+                <img srcset="./images/product-img5.png 2x" alt="" class="product-img">
+                <div class="product-content">
+                    <p class="product-name">Rong biển cháy tỏi</p>
+                    <p class="price">40<span>.000đ</span></p>
+                    <p class="product-desc">Vị ngon khó cưỡng ăn không ngừng được</p>
+                    <div class="product-action">
+                        <button class="product-btn1">TÙY CHỈNH</button>
+                        <button class="product-btn2">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="news-list">
+            <div class="news-item news-item1">
+                <div class="news1-content">
+                    <p class="news1-desc">Siêu ưu đãi & Hơn thế nữa</p>
+                    <h2 class="news1-title">COMBO MIXIFOOD</h2>
+                    <button class="news1-btn btn">Đặt ngay</button>
+                </div>
+                <div class="news1-img">
+                    <div class="news1-triangle"></div>
+                    <img srcset="./images/news1.png 2x" alt="">
+                </div>
+            </div>
+            <div class="news-item news-item2">
+                <img srcset="./images/news2.png 2x" alt="">
+                <p class="news2-title">MixiFood</p>
+            </div>
+            <div class="news-item news-item3">
+                <img alt="" srcset="./images/news3.png 2x">
+                <p class="news3-title">Review</p>
+            </div>
+            <div class="news-item news-item4">
+                <div class="news4-content">
+                    <h2 class="news4-title  ">Bò khô viên</h2>
+                    <p class="news4-desc">Khám phá vị ngon mới lạ</p>
+                </div>
+                <div class="news4-img">
+                    <div class="news4-triangle"></div>
+                    <img srcset="./images/news4.png 2x" alt="">
+                </div>
+            </div>
+        </div>       
+    </section>
+    <section class="order">
+        <div class="order-content">
+            <h1 class="order-heading">Đặt hàng ngay</h1>
+            <p class="order-desc">Miễn phí giao hàng cho đơn hàng đầu tiên</p>
+            <button class="order-btn">Đặt hàng ngay</button>
+        </div>
+    </section>
+    <section class="feedback">
+        <div class="feedback-left">
+            <p class="feedback-desc left-desc">Gửi phản hồi và đánh giá của bạn cho MixiFood</p>
+            <button class="feedback-btn btn">Chúng tôi lắng nghe bạn</button>
+        </div>
+        <div class="feedback-right">
+            <p class="feedback-desc">Nhập email để nhận thông tin khuyến mãi</p>
+            <div class="feedback-action">
+                <input type="text" class="feedback-input">
+                <button class="btn right-btn">Gửi</button>
+            </div>
+        </div>
+    </section>
+    <div class="line"></div>
+    <footer>
+        <ul class="footer-list">
+            <p class="footer-title">Danh mục sản phẩm</p>
+            <li class="footer-item">Khô gà Mixi</li>
+            <li class="footer-item">Khô bò Mixi</li>
+            <li class="footer-item">Bò khô viên</li>
+            <li class="footer-item">Mực rim me</li>
+        </ul>
+        <ul class="footer-list">
+            <p class="footer-title">Thông tin</p>
+            <li class="footer-item">Về chúng tôi</li>
+            <li class="footer-item">Chính sách bảo mật</li>
+            <li class="footer-item">Điều khoản</li>
+            <li class="footer-item">Site map</li>
+        </ul>
+        <ul class="footer-list">
+            <p class="footer-title">Hỗ trợ</p>
+            <li class="footer-item">Mọi thắc mắc vui lòng liên hệ Fanpage <br> hoặc Instagram</li>
+            <div class="footer-logos">
+                <img srcset="./images/footer-logo1.png 2x" alt="" class="logoz">
+                <img srcset="./images/footer-logo2.png 2x" alt="" class="logoz">
+            </div>
+        </ul>
+    </footer>
+    <div class="signature">
+        @2022    Khoi7k. All Right Reserved
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

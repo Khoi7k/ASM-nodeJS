@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MixiFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./images//logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/dropdown_menu.css">
+    <link rel="stylesheet" href="./css/order-page.css">
+    <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img class="logo" srcset="./images/logo.png 2x" alt=""></a>
+            <ul class="navigation">
+                <li><a href="index.html"class="nav-item">Trang chủ</a></li>                            
+                <li onmouseover="displayDropdown()" onmouseout="removeDropdown()" class="nav-menu"><a href="./menufood.html"class="nav-item">Thực đơn</a></li>                            
+                <li><a href=""class="nav-item">Khuyến mãi</a></li>                            
+                <li><a href="./news.html"class="nav-item">Tin tức</a></li>                            
+                <li><a href="./contact.html"class="nav-item">Liên hệ</a></li>                            
+            </ul>
+            <div class="header-action">
+                <a href="./log-in.html"><button class="sign-in btn">Đăng kí</button></a>
+                <a href="order.html"><button class="header-order btn">Đặt hàng</button></a>
+                <i class="fa fa-bars menu-icon"></i>
+            </div>           
+        </nav>
+        <ul class="menu-list">
+            <li><a href="index.html" class="menu-item">Trang chủ</a></li>
+            <li><a href="./menufood.html" class="menu-item">Thực đơn</a></li>
+            <li><a href="" class="menu-item">Khuyến mãi</a></li>
+            <li><a href="./news.html" class="menu-item">Tin tức</a></li>
+            <li><a href="contact.html" class="menu-item">Liên hệ</a></li>
+        </ul>
+        <div class="dropdown-menu" id="dropdown" onmouseover="displayDropdown()" onmouseout="removeDropdown()">
+            <div class="dropdown-list">
+                <div class="dropdown-item">
+                    <a href="#"><img src="./images/combo-mixi.jpg" alt=""></a>
+                    <p>Combo Mixifood</p>
+                </div>
+                <div class="dropdown-item">
+                    <a href="#"><img src="./images/product-img1.png" alt=""></a>
+                    <p>Best Seller</p>
+                </div>
+                <div class="dropdown-item">
+                    <a href="#"><img src="./images/dropdown-img3.jpg" alt=""></a>
+                    <p>Các món lẻ</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="block-90"></div>
+    <div class="order-page_heading">
+        <h1>VUI LÒNG CUNG CẤP THÔNG TIN GIAO HÀNG CỦA BẠN</h1>
+        <p>Thông tin này giúp đơn hàng của bạn xử lý nhanh hơn</p>
+    </div>
+    <section class="order-page_main">
+        <div class="order-page_form">
+            <label for="order-name" class="order-form_label">Họ tên*</label><br>
+            <input type="text" name="" id="order-name" class="order-form_input" required autofocus><br>
+            <span id="alert_name" class="order_span"></span><br>
+            <label for="order-phone" class="order-form_label">Điện thoại*</label><br>
+            <input type="number" name="" id="order-phone" class="order-form_input" required><br>
+            <span id="alert_phone"class="order_span"></span><br>
+            <label for="order-email" class="order-form_label">Email*</label><br>
+            <input type="email" name="" id="order-email" class="order-form_input" required><br>
+            <span id="alert_email"class="order_span"></span><br>
+            <div class="order-flex">
+                <div class="order-item1">
+                    <label for="order-city" class="order-form_label" >Tỉnh/Thành*</label><br>
+                    <input type="text" name="" id="order-city" class="order-form_input"><br>
+                    <span id="alert_city" class="order_span"></span>
+                </div>
+                <div class="order-item2">
+                    <label for="order-town" class="order-form_label">Quận/Huyện*</label><br>
+                    <select name="" id="order-town" class="order-form_input">
+                        <option value="1">Quận/Huyện</option>
+                        <option value="5">Huyện Bà Già</option>
+                        <option value="2">Huyện Ông Già</option>
+                        <option value="3">Huyện Bà Cô</option>
+                        <option value="4">Huyện Ông Chú</option>
+                    </select>
+                    <span class="order_span" id="alert_town"></span>
+                </div>
+            </div>
+            <div class="order-flex">
+                <div class="order-item2">
+                    <label for="order-address" class="order-form_label">Địa chỉ*</label><br>
+                    <input type="text" name="" id="order-address" class="order-form_input" required><br>
+                    <span class="order_span" id="alert_address"></span>
+                </div>
+                <div class="order-item1">
+                    <label for="order-street" class="order-form_label">Phường*</label><br>
+                    <select name="" id="order-street" class="order-form_input">
+                        <option value="0">Phường</option>
+                        <option value="1">Phường Đài Sơn</option>
+                        <option value="2">Phường Thanh Sơn</option>
+                        <option value="3">Phường Mỹ Đông</option>
+                        <option value="4">Phường Mỹ Tây</option>
+                    </select>
+                    <span class="order_span" id="alert_street"></span>
+                </div>
+            </div>
+        </div>
+        <div class="order-page_cart">
+            <h3 class="cart-heading">Giỏ hàng</h3>
+            <hr>
+            <div class="cart-item">
+                <img srcset="./images/cart-img1.png 2x" alt="" class="cart-img">
+                <div class="cart-content">
+                    <h3>Khô gà lá chanh</h3>
+                    <p class="cart-weight">Khối lượng <span>200g</span></p>
+                    <p class="cart-price">145<span>.000 đ</span> <span class="span2">x2</span></p>
+                </div>
+            </div>
+            <hr>
+            <div class="cart-item">
+                <img srcset="./images/cart-img2.png 2x" alt="" class="cart-img">
+                <div class="cart-content">
+                    <h3>Bò khô viên</h3>
+                    <p class="cart-weight">Khối lượng <span>200g</span></p>
+                    <p class="cart-price">115<span>.000 đ</span> <span class="span2">x1</span></p>
+                </div>
+            </div>
+            <hr>
+            <div class="cart-money">
+                <div>
+                    <p class="cart-money_text">Tiền Ship</p>
+                    <p class="cart-money_text">Giảm giá</p>
+                </div>
+                <div>
+                    <p class="cart-money_price">20.000 đ</p>
+                    <p class="cart-money_price">50.000 đ</p>
+                </div>
+            </div>
+            <hr>
+            <div class="cart-total">
+                <h1>Total</h1>
+                <p>375<span>.000 đ</span></p>
+            </div>
+        </div>
+    </section>
+    <div class="order-page_action">
+        <button class="order-page_btn1" onclick="checking()" formaction="submit">Tiếp tục</button>
+        <button class="order-page_btn2">Đăng nhập bằng tài khoản MixiFood</button>
+        <p>Đăng nhập bằng tài khoản MixiFood để nhanh chóng chọn địa chỉ giao hàng đã đăng kí của bạn</p>
+    </div>
+    <section class="feedback">
+        <div class="feedback-left">
+            <p class="feedback-desc left-desc">Gửi phản hồi và đánh giá của bạn cho MixiFood</p>
+            <button class="feedback-btn btn">Chúng tôi lắng nghe bạn</button>
+        </div>
+        <div class="feedback-right">
+            <p class="feedback-desc">Nhập email để nhận thông tin khuyến mãi</p>
+            <div class="feedback-action">
+                <input type="text" class="feedback-input">
+                <button class="btn right-btn">Gửi</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="footer-list">
+            <p class="footer-title">Danh mục sản phẩm</p>
+            <li class="footer-item">Khô gà Mixi</li>
+            <li class="footer-item">Khô bò Mixi</li>
+            <li class="footer-item">Bò khô viên</li>
+            <li class="footer-item">Mực rim me</li>
+        </ul>
+        <ul class="footer-list">
+            <p class="footer-title">Thông tin</p>
+            <li class="footer-item">Về chúng tôi</li>
+            <li class="footer-item">Chính sách bảo mật</li>
+            <li class="footer-item">Điều khoản</li>
+            <li class="footer-item">Site map</li>
+        </ul>
+        <ul class="footer-list">
+            <p class="footer-title">Hỗ trợ</p>
+            <li class="footer-item">Mọi thắc mắc vui lòng liên hệ Fanpage <br> hoặc Instagram</li>
+            <div class="footer-logos">
+                <img srcset="./images/footer-logo1.png 2x" alt="" class="logoz">
+                <img srcset="./images/footer-logo2.png 2x" alt="" class="logoz">
+            </div>
+        </ul>
+    </footer>
+    <div class="signature">
+        @2022    Khoi7k. All Right Reserved
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+</html>

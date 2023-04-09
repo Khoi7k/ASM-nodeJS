@@ -1,0 +1,43 @@
+.detail__container{
+    display: flex;
+    width: 73%;
+    margin: 30px auto;
+    gap: 30px;
+}
+.detail__container>img{
+    width: 100%;
+    border-radius: 15px;
+}
+.detail__content{
+    width: 100%;
+    gap: 8px;
+}
+.detail__price{
+    margin: 8px 0;
+    color: gray;
+    font-weight: 300;
+}
+.detail__content>button{
+    background-color: #ffc849;
+    border: none;
+    /* width: 20%; */
+    padding: 5px 10px;
+    transition: all 0.25s linear;
+    margin-top: 10px;
+}
+.detail__content>button:hover{
+    background-color: #FFC02E;
+    color: white;
+    transform: scale(105%);
+}
+.detail__info{
+    width: 73%;
+    margin: 30px auto;
+}
+.detail__info--title{
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,31 @@
+.dropdown-menu{
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(25,25,25,0.8);
+    /* opacity: 0.8; */
+    z-index: 9999999;
+    display: none;
+    top: 90px;
+}
+.dropdown-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.dropdown-item>a>img{
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.dropdown-item:hover.dropdown-item>p{
+    color: #BC7D30;
+}
+.dropdown-item>p{
+    color: #fff;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 300;
+}

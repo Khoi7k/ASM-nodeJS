@@ -1,0 +1,112 @@
+.categories-container,.products-container,.users-container>h1{
+    text-align: center;
+}
+.content table{
+    border-collapse: collapse;
+    margin: 1rem 0;
+    width: 100%;
+}
+.content td,th{
+    border: thin solid lightgray;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.content a.link{
+    cursor: pointer;
+}
+.content a.link:hover{
+    color: #0CA4C9;
+}
+.product_img{
+    width: 100%;
+    height: 8rem;
+    object-fit: cover;
+}
+.product_textarea{
+    width:100%;
+    background-color: transparent; 
+    color: #EAA636; 
+    border: none;
+    scrollbar-track-color: black;
+}
+td>a, th>a{
+    color: rgba(255, 60, 0, 0.834);
+    text-decoration: none;
+}
+.tab-content{
+    position: relative;
+}
+.add_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.formAdd{
+    background-color: #fff;
+    width: 20%;
+    margin: 10rem auto;
+    /* text-align: center; */
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: #27292A;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    opacity: 1;
+    transition: opacity 0.25s linear;
+    z-index: 999;
+}
+.formAdd>form>input[type="text"],.formAdd>form>input[type="number"], .formAdd>form>input[type="file"], .formAdd>form>textarea{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 1px solid #27292A;
+    color: #27292A;
+    font-family: 'Roboto Mono', monospace;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.formAdd>form>button{
+    background-color: rgba(255, 60, 0, 0.834);
+    border: none;
+    padding: 5px 10px;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+}
+.add_new{
+    float: left;
+    background-color: #d64343;
+    padding: 5px 15px;
+    margin-left: 15px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+.add_new:hover{
+    background-color: #a72a2a;
+}
+.submit{
+    background-color: #d64343;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+.submit:hover{
+    background-color: #a72a2a;
+}
+.update_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.75);
+}

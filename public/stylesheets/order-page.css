@@ -1,0 +1,136 @@
+.order-page_heading{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.order-page_heading>h1{
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.order-page_main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.order-page_form{
+    width: 58%;
+    padding: 40px 30px;
+    box-shadow: 0 0 8px 2px #e7e7e7;
+    border-radius: 10px;
+}
+.order-form_label{
+    font-size: 18px;
+    font-weight: 600;
+    color: gray;
+    margin-left: 5px;
+}
+.order-form_input{
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    margin-bottom: 2px;
+}
+.order_span{
+    font-size: 14px;
+    color: red;
+    font-style: italic;
+}
+.order-flex{
+    display: flex;
+    gap: 15px;
+}
+.order-item1{
+    width: 40%;
+}
+.order-item2{
+    width: 58%;
+}
+.order-page_cart{
+    width: 28%;
+    box-shadow: 0 0 8px 2px #e7e7e7;
+    padding: 20px 30px;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+.cart-heading{
+    color: gray;
+    margin-bottom: 10px;
+}
+.cart-item{
+    margin: 15px 3px;
+    display: flex;
+}
+.cart-content{
+    margin-left: 15px;
+}
+.cart-content>h3{
+    font-weight: 700;
+}
+.cart-img{
+    width: 35%;
+}
+.cart-weight{
+    margin: 10px 0;
+    font-size: 13px;
+}
+.cart-weight>span{
+    font-weight: 700;
+}
+.cart-price{
+    font-size: 18px;
+    font-weight: 700;
+}
+.cart-price>span{
+    font-size: 14px;
+}
+.span2{
+    font-size: 16px;
+    font-weight: 300;
+}
+.cart-money,
+.cart-total{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 3px;
+}
+.cart-money>div>p{
+    margin-bottom: 10px;
+}
+.cart-money_price{
+    font-weight: bold;
+}
+.order-page_action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: 0 auto;
+    gap: 8px;
+    margin-bottom: 60px;
+}
+.order-page_btn1{
+    padding: 7px 0;
+    background-color: #E4002B;
+    color: white;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+.order-page_btn2{
+    padding: 7px 0;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 6px;
+}
+.order-page_action>p{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 300;
+}
